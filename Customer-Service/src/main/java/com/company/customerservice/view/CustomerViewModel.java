@@ -1,8 +1,10 @@
-package com.company.CustomerService.model;
+package com.company.customerservice.view;
 
 import java.util.Objects;
 
-public class Customer {
+public class CustomerViewModel {
+
+    //properties of view dto. Same as DTO for this one.
     private int customerId;
     private String firstName;
     private String lastName;
@@ -12,17 +14,7 @@ public class Customer {
     private String email;
     private String phone;
 
-    public Customer(int customerId, String firstName, String lastName, String street, String city, String zip, String email, String phone) {
-        this.customerId = customerId;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.street = street;
-        this.city = city;
-        this.zip = zip;
-        this.email = email;
-        this.phone = phone;
-    }
-
+    //getters and setters
     public int getCustomerId() {
         return customerId;
     }
@@ -87,19 +79,20 @@ public class Customer {
         this.phone = phone;
     }
 
+    //equals and hashCode methods overridden
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Customer customer = (Customer) o;
-        return customerId == customer.customerId &&
-                firstName.equals(customer.firstName) &&
-                lastName.equals(customer.lastName) &&
-                street.equals(customer.street) &&
-                city.equals(customer.city) &&
-                zip.equals(customer.zip) &&
-                email.equals(customer.email) &&
-                phone.equals(customer.phone);
+        CustomerViewModel that = (CustomerViewModel) o;
+        return customerId == that.customerId &&
+                Objects.equals(firstName, that.firstName) &&
+                Objects.equals(lastName, that.lastName) &&
+                Objects.equals(street, that.street) &&
+                Objects.equals(city, that.city) &&
+                Objects.equals(zip, that.zip) &&
+                Objects.equals(email, that.email) &&
+                Objects.equals(phone, that.phone);
     }
 
     @Override
