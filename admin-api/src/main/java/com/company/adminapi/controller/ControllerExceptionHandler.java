@@ -3,7 +3,7 @@ package com.company.adminapi.controller;
 import com.company.adminapi.exception.NotFoundException;
 import com.fasterxml.jackson.core.JsonParseException;
 import org.springframework.dao.DataAccessException;
-import org.springframework.hateoas.VndErrors;
+import org.springframework.hateoas.mediatype.vnderrors.VndErrors;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.BindingResult;

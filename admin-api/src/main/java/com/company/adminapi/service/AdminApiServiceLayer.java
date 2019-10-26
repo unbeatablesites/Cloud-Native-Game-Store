@@ -1,7 +1,8 @@
 package com.company.adminapi.service;
 
 import com.company.adminapi.dto.InvoiceItem;
-import com.company.adminapi.util.feign.*;
+
+import com.company.adminapi.feign.*;
 import com.company.adminapi.view.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
