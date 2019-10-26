@@ -1,10 +1,9 @@
-package com.company.levelupservice.dto;
+package com.company.levelupservice.view;
 
 import java.time.LocalDate;
 import java.util.Objects;
 
-public class LevelUp {
-
+public class LevelUpViewModel {
     private int levelUpId;
     private Integer customerId;
     private Integer points;
@@ -46,11 +45,11 @@ public class LevelUp {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        LevelUp levelUp = (LevelUp) o;
-        return levelUpId == levelUp.levelUpId &&
-                Objects.equals(customerId, levelUp.customerId) &&
-                Objects.equals(points, levelUp.points) &&
-                Objects.equals(memberDate, levelUp.memberDate);
+        LevelUpViewModel that = (LevelUpViewModel) o;
+        return levelUpId == that.levelUpId &&
+                Objects.equals(customerId, that.customerId) &&
+                Objects.equals(points, that.points) &&
+                Objects.equals(memberDate, that.memberDate);
     }
 
     @Override
