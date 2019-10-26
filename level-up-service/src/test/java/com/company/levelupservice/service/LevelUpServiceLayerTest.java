@@ -1,9 +1,8 @@
-package levelupservice.service;
+package com.company.levelupservice.service;
 
 import com.company.levelupservice.dao.LevelUpDao;
 import com.company.levelupservice.dao.LevelUpDaoJdbcTemplateImpl;
 import com.company.levelupservice.dto.LevelUp;
-import com.company.levelupservice.service.LevelUpServiceLayer;
 import com.company.levelupservice.view.LevelUpViewModel;
 import org.junit.Before;
 import org.junit.Test;
@@ -11,8 +10,9 @@ import org.junit.Test;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Level;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 import static org.mockito.Mockito.doReturn;
 import static org.mockito.Mockito.mock;
 

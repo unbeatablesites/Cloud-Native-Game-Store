@@ -32,7 +32,7 @@ public class LevelUpController {
     }
 
     //get level up
-    @RequestMapping(value = "/levelup/{id}",method= RequestMethod.GET)
+    @RequestMapping(value = "/levelup/{id}",method=RequestMethod.GET)
     @ResponseStatus(HttpStatus.OK)
     public LevelUpViewModel findLevelUpById(@PathVariable("id") int id){
         LevelUpViewModel levelUpViewModel = service.findLevelUp(id);
@@ -44,7 +44,7 @@ public class LevelUpController {
     }
 
     //update level ups
-    @RequestMapping(value = "/levelup/{id}",method= RequestMethod.PUT)
+    @RequestMapping(value = "/levelup/{id}",method=RequestMethod.PUT)
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void updateLevelUp(@PathVariable("id") int id, @RequestBody @Valid LevelUpViewModel levelUpViewModel){
         if(id != levelUpViewModel.getLevelUpId()){
@@ -54,7 +54,7 @@ public class LevelUpController {
     }
 
     //delete level ups
-    @RequestMapping(value = "/levelup/{id}",method= RequestMethod.DELETE)
+    @RequestMapping(value = "/levelup/{id}",method=RequestMethod.DELETE)
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void removeLevelUp(@PathVariable("id") int id){
         service.removeLevelUp(id);

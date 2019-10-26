@@ -1,4 +1,4 @@
-package levelupservice;
+package com.company.levelupservice;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

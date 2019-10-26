@@ -10,6 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
+import java.util.logging.Level;
 
 @Repository
 public class LevelUpDaoJdbcTemplateImpl implements LevelUpDao{

@@ -1,6 +1,5 @@
-package levelupservice.dao;
+package com.company.levelupservice.dao;
 
-import com.company.levelupservice.dao.LevelUpDao;
 import com.company.levelupservice.dto.LevelUp;
 import org.junit.Before;
 import org.junit.Test;
@@ -11,10 +10,9 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.time.LocalDate;
 import java.util.List;
+import java.util.logging.Level;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNull;
-
+import static org.junit.Assert.*;
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest
 public class LevelUpDaoJdbcTemplateImplTest {
