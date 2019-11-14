@@ -1,3 +1,3 @@
 # Cloud-Native-Game-Store
 
-Step 2Add frontend
+Step 2 Add frontend
